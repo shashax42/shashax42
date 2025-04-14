@@ -1,0 +1,39 @@
+name: Update Last Active Time
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 6시간마다 실행
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  update-time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up timezone
+        uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "Asia/Seoul"
+          
+      - name: Update last active time
+        run: |
+          # 현재 시간 가져오기 (한국 시간)
+          CURRENT_TIME=$(date '+%Y-%m-%d %H:%M:%S KST')
+          
+          # README.md 파일에서 마지막 활동 시간 업데이트
+          sed -i "s|<!--LAST_ACTIVE-->|${CURRENT_TIME}|g" README.md
+          
+          # 변경 확인
+          if [[ -z $(git status --porcelain) ]]; then
+            echo "No changes detected."
+            exit 0
+          fi
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -am "🤖 자동 업데이트: 마지막 활동 시간"
+          git push
