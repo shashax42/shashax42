@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .banner {
+      width: 1200px;
+      height: 300px;
+      background: linear-gradient(135deg, #C29EFF 0%, #E1BEE7 25%, #FFF0F5 50%, #E1BEE7 75%, #C29EFF 100%);
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(123, 90, 141, 0.3);
+    }
+    
+    .glass {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .circle-1 {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      left: -50px;
+    }
+    
+    .circle-2 {
+      width: 150px;
+      height: 150px;
+      bottom: -30px;
+      right: 100px;
+    }
+    
+    .circle-3 {
+      width: 100px;
+      height: 100px;
+      top: 50px;
+      right: -20px;
+    }
+    
+    .title {
+      font-size: 48px;
+      color: #483D8B;
+      text-shadow: 2px 2px 10px rgba(194, 158, 255, 0.5);
+      margin: 0;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    
+    .subtitle {
+      font-size: 20px;
+      color: #6A5ACD;
+      margin-top: 10px;
+      font-weight: 300;
+      opacity: 0.8;
+    }
+    
+    .icons {
+      display: flex;
+      margin-top: 20px;
+      gap: 30px;
+    }
+    
+    .icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 10px rgba(123, 90, 141, 0.2);
+      transition: all 0.3s ease;
+    }
+    
+    .icon:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 6px 15px rgba(123, 90, 141, 0.3);
+    }
+    
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+      animation: twinkle 4s infinite alternate;
+    }
+    
+    @keyframes twinkle {
+      0% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    
+    <div class="glass">
+      <h1 class="title">Elegant Infrastructure & Magic</h1>
+      <p class="subtitle">Cloud Architect | Terraform Sorceress | AWS Enchantress</p>
+      
+      <div class="icons">
+        <div class="icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" width="30" height="30" alt="Terraform">
+        </div>
+        <div class="icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="30" height="30" alt="AWS">
+        </div>
+        <div class="icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" width="30" height="30" alt="Kubernetes">
+        </div>
+      </div>
+    </div>
+    
+    <div class="stars">
+      <!-- 랜덤한 위치에 별들 배치 -->
+      <div class="star" style="top: 20%; left: 10%;"></div>
+      <div class="star" style="top: 30%; left: 25%;"></div>
+      <div class="star" style="top: 15%; left: 40%;"></div>
+      <div class="star" style="top: 70%; left: 60%;"></div>
+      <div class="star" style="top: 40%; left: 75%;"></div>
+      <div class="star" style="top: 60%; left: 85%;"></div>
+      <div class="star" style="top: 25%; left: 90%;"></div>
+      <div class="star" style="top: 80%; left: 15%;"></div>
+      <div class="star" style="top: 85%; left: 30%;"></div>
+      <div class="star" style="top: 10%; left: 55%;"></div>
+      <div class="star" style="top: 50%; left: 70%;"></div>
+      <div class="star" style="top: 75%; left: 40%;"></div>
+    </div>
+  </div>
+</body>
+</html>

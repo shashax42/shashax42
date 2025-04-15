@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 그라데이션 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C29EFF" />
+      <stop offset="25%" stop-color="#E1BEE7" />
+      <stop offset="50%" stop-color="#FFF0F5" />
+      <stop offset="75%" stop-color="#E1BEE7" />
+      <stop offset="100%" stop-color="#C29EFF" />
+    </linearGradient>
+    
+    <!-- 글래스모피즘 필터 -->
+    <filter id="glass-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+      <feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 0.3 0" />
+      <feComposite in2="SourceGraphic" operator="in" />
+    </filter>
+    
+    <!-- 부드러운 빛 효과 -->
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+      <feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 0.5 0" />
+      <feComposite in2="SourceGraphic" operator="over" />
+    </filter>
+    
+    <!-- 반짝이는 별 필터 -->
+    <filter id="star-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+      <feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 0.8 0" />
+      <feComposite in2="SourceGraphic" operator="over" />
+    </filter>
+    
+    <!-- 아이콘 배경 필터 -->
+    <filter id="icon-bg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+      <feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 0.3 0" />
+      <feComposite in2="SourceGraphic" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- 메인 배경 -->
+  <rect x="0" y="0" width="1200" height="300" rx="10" ry="10" fill="url(#bg-gradient)" />
+  
+  <!-- 글래스모피즘 레이어 -->
+  <rect x="20" y="20" width="1160" height="260" rx="8" ry="8" fill="rgba(255, 255, 255, 0.2)" filter="url(#glass-blur)" style="mix-blend-mode: overlay;" />
+  
+  <!-- 장식용 원형 요소들 -->
+  <circle cx="100" cy="100" r="120" fill="rgba(255, 255, 255, 0.1)" filter="url(#glass-blur)" />
+  <circle cx="1100" cy="200" r="80" fill="rgba(255, 255, 255, 0.1)" filter="url(#glass-blur)" />
+  <circle cx="900" cy="50" r="50" fill="rgba(255, 255, 255, 0.1)" filter="url(#glass-blur)" />
+  
+  <!-- 작은 별들 -->
+  <circle cx="200" cy="80" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="350" cy="120" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="500" cy="50" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="750" cy="200" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="4.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="920" cy="150" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1050" cy="80" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="4.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="180" cy="230" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="5.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="650" cy="250" r="1.5" fill="white" filter="url(#star-glow)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="4.7s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- 텍스트 컨텐츠 -->
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" font-weight="300" fill="#483D8B" filter="url(#soft-glow)">
+    Elegant Infrastructure &amp; Magic
+  </text>
+  
+  <text x="600" y="160" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="300" fill="#6A5ACD" opacity="0.8">
+    Cloud Architect | Terraform Sorceress | AWS Enchantress
+  </text>
+  
+  <!-- 아이콘 배경 원 -->
+  <circle cx="490" cy="210" r="30" fill="rgba(255, 255, 255, 0.2)" filter="url(#icon-bg)" />
+  <circle cx="600" cy="210" r="30" fill="rgba(255, 255, 255, 0.2)" filter="url(#icon-bg)" />
+  <circle cx="710" cy="210" r="30" fill="rgba(255, 255, 255, 0.2)" filter="url(#icon-bg)" />
+  
+  <!-- 텍스트로 아이콘 대체 -->
+  <text x="490" y="220" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#483D8B">T</text>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#483D8B">AWS</text>
+  <text x="710" y="220" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#483D8B">K8s</text>
+  
+  <!-- 작은 왕관 장식 -->
+  <path d="M 600 40 L 610 55 L 620 35 L 630 55 L 640 40 L 635 60 L 605 60 L 600 40" fill="#E1BEE7" filter="url(#soft-glow)" />
+</svg>
