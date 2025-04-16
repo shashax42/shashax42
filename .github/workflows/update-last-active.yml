@@ -8,9 +8,15 @@ on:
 jobs:
   update-time:
     runs-on: ubuntu-latest
+    # 권한 명시적 설정
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          # 전체 히스토리 가져오기
+          fetch-depth: 0
         
       - name: Set up timezone
         uses: szenius/set-timezone@v1.2
@@ -21,19 +27,35 @@ jobs:
         run: |
           # 현재 시간 가져오기 (한국 시간)
           CURRENT_TIME=$(date '+%Y-%m-%d %H:%M:%S KST')
+          echo "현재 시간: $CURRENT_TIME"
           
-          # README.md 파일에서 마지막 활동 시간 업데이트
-          sed -i "s|<!--LAST_ACTIVE-->|${CURRENT_TIME}|g" README.md
+          # README.md 파일 내용 확인
+          echo "README.md 파일 내용 확인:"
+          grep -n "LAST_ACTIVE" README.md || echo "마커를 찾을 수 없습니다"
           
-          # 변경 확인
-          if [[ -z $(git status --porcelain) ]]; then
-            echo "No changes detected."
-            exit 0
+          # 파일 내용 전체 교체 대신 특정 패턴만 교체
+          if grep -q "<!--LAST_ACTIVE-->" README.md; then
+            echo "마커 찾음, 업데이트 중..."
+            sed -i "s|<!--LAST_ACTIVE-->|$CURRENT_TIME|g" README.md
+            cat README.md | grep -A 1 -B 1 "$CURRENT_TIME"
+          else
+            echo "마커를 찾을 수 없습니다. 다른 형식으로 시도합니다."
+            # 다른 패턴도 시도
+            sed -i "s|Last active:.*|Last active: $CURRENT_TIME|g" README.md
           fi
           
+          # 변경 확인 및 표시
+          git diff README.md
+          if [[ -z $(git status --porcelain) ]]; then
+            echo "변경사항이 없습니다."
+            exit 0
+          else
+            echo "변경사항이 감지되었습니다."
+          fi
+      
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -am "🤖 자동 업데이트: 마지막 활동 시간"
+          git commit -am "🤖 자동 업데이트: 마지막 활동 시간 ($(date '+%Y-%m-%d %H:%M:%S KST'))"
           git push
