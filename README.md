@@ -1,11 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB6C1,50:9370DB,100:4169E1&height=200&section=header&text=Cloud%20Princess%20of%20AWS%20Castle&fontSize=40&fontColor=FFFFFF&animation=fadeIn&fontAlignY=30" alt="Cloud Princess Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB6C1,50:9370DB,100:4169E1&height=200&section=header&text=Magical%20Cloud%20Architect&fontSize=40&fontColor=FFFFFF&animation=fadeIn&fontAlignY=30" alt="Magical Cloud Banner"/>
   <br>
   <img src="https://readme-typing-svg.demolab.com?font=Enchanted&size=28&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=AWS+Certified+Hogwarts+Graduate;Infrastructure+as+Magical+Code;XR/MR+Holographic+Cloud+Architect;Once+Upon+a+Serverless+Function..." alt="Typing SVG" />
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/shashax42/shashax42/main/assets/header-banner.svg" width="600" alt="클라우드 공주 배너" />
 </div>
 
 <table align="center">
@@ -16,7 +12,7 @@
 ⚡ Realm: Cloud Magic Castle in AWS Kingdom
 💎 House: Terraform Ravenclaw 🦅
 🔮 Patronus: High-Availability Dragon
-🏰 Royal Title: Princess of Infrastructure
+🏰 Royal Title: Archmage of Infrastructure
 🌟 Prophecy: "She who masters the cloud shall bridge
       the worlds of reality and digital magic"
 ```
@@ -24,22 +20,17 @@
 </td>
 <td>
 
-<img align="right" width="300" src="https://img.shields.io/badge/-AWS%20%EA%B3%B5%EC%A3%BC-%23FF69B4?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+<img align="right" width="300" src="https://img.shields.io/badge/-AWS-%23FF69B4?style=for-the-badge&logo=amazon-aws&logoColor=white" />
 
 </td>
 </tr>
 </table>
 
-<!-- 디즈니 공주 스타일 소개 -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/shashax42/shashax42/main/assets/header-banner.svg" alt="Cloud Princess Banner" width="100%"/>
-</div>
-
-<h2 align="center">⚡ 프린세스 클라우드 엔지니어링 여정 ⚡</h2>
+<h2 align="center">⚡ 클라우드 엔지니어링 여정 ⚡</h2>
 
 ```diff
 + 모든 클라우드 서비스 뒤에는 마법 같은 인프라가 있습니다 +
-- 저는 AWS 왕국의 공주이자 디지털 마법의 수호자입니다 -
+- 저는 AWS 왕국의 마법사이자 디지털 마법의 수호자입니다 -
 ! 인프라스트럭처의 아름다움과 강력함을 조화롭게 통합합니다 !
 # XR/MR 홀로그램으로 클라우드의 경계를 넘어 새로운 세계를 창조합니다 #
 ```
@@ -64,7 +55,7 @@
 
 ```yaml
 🧙‍♀️ 현재 작업 중: AWS+홀로그램 기반 다중 리전 마법 인프라 모듈
-🏰 위치: 대한민국 서울, 클라우드 성
+🏰 위치: 대한민국 서울, 디지털 마법성
 🔮 마지막 주문 시전: <!--LAST_ACTIVE-->
 💫 영감 레벨: 마법 같은 클라우드 아키텍처 탐색 중
 ```
@@ -161,12 +152,12 @@ pie title 좋아하는 클라우드 마법 주문 (이번 달)
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=shashax42&style=for-the-badge&color=FF69B4" alt="프로필 방문 수" />
+  <img src="https://komarev.com/ghpvc/?username=shashax42&style=for-the-badge&color=FF69B4" alt="마법사 프로필 방문 수" />
 </div>
 
 <p align="center">
   <!-- 잔디밭 뱀은 GitHub Actions 설정 후 활성화됩니다 -->
-  <img src="https://img.shields.io/badge/-GitHub%20잔디밭%20뱀-%23FF69B4?style=for-the-badge&logo=github&logoColor=white" alt="공주님의 GitHub 잔디밭을 가로지르는 뱀" />
+  <img src="https://img.shields.io/badge/-GitHub%20잔디밭%20뱀-%23FF69B4?style=for-the-badge&logo=github&logoColor=white" alt="마법의 GitHub 잔디밭을 가로지르는 뱀" />
 </p>
 
 <div align="center">
