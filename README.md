@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/3o7btLaRPGJFgmEDNC/giphy.gif" width="600" height="200" />
+  <img src="https://raw.githubusercontent.com/shashax42/shashax42/main/assets/header-banner.svg" width="600" alt="클라우드 공주 배너" />
 </div>
 
 <table align="center">
@@ -24,7 +24,7 @@
 </td>
 <td>
 
-<img align="right" width="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOG05YW5zMzJkMTVyZGk1dTdya3dodmxmcXYycGZ5dWR1anVtOXZ4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEhmQ3TGEYvriKaEo/giphy.gif" />
+<img align="right" width="300" src="https://img.shields.io/badge/-AWS%20%EA%B3%B5%EC%A3%BC-%23FF69B4?style=for-the-badge&logo=amazon-aws&logoColor=white" />
 
 </td>
 </tr>
@@ -35,7 +35,7 @@
   <img src="https://raw.githubusercontent.com/shashax42/shashax42/main/assets/header-banner.svg" alt="Cloud Princess Banner" width="100%"/>
 </div>
 
-<h2 align="center"><img src="https://static.wikia.nocookie.net/harrypotter/images/0/0c/Sorcer%27s_Stone_-_Wand_Choosing_Wand.gif/revision/latest/scale-to-width-down/320?cb=20180110193949" width="40"> 프린세스 클라우드 엔지니어링 여정 <img src="https://i.pinimg.com/originals/86/1a/95/861a9550b93cddb8d5f7d9b9b49a3352.gif" width="40"></h2>
+<h2 align="center">⚡ 프린세스 클라우드 엔지니어링 여정 ⚡</h2>
 
 ```diff
 + 모든 클라우드 서비스 뒤에는 마법 같은 인프라가 있습니다 +
@@ -91,7 +91,7 @@ pie title 좋아하는 클라우드 마법 주문 (이번 달)
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://media.giphy.com/media/xTiTnkH5IfO3ayU9by/giphy.gif" width="100" height="100"><br>
+      <img src="https://img.shields.io/badge/-홀로그램%20성-%23FF69B4?style=for-the-badge&logo=amazon-aws&logoColor=white" width="120"><br>
       <b>홀로그램 성</b> ✨
     </td>
     <td>
@@ -101,7 +101,7 @@ pie title 좋아하는 클라우드 마법 주문 (이번 달)
   </tr>
   <tr>
     <td align="center">
-      <img src="https://media.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" width="100" height="100"><br>
+      <img src="https://img.shields.io/badge/-마법사의%20모자-%239932CC?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgMTAuOTM1djIuMTMxbC04IDMuOTQ3di01LjkwOGw4LTMuOTgyem0tMS41LS42OThsLTYuNSAzLjE4MXYtNy45NThsNi41IDMuNjk5em0tNy41LTMuMjgybC02LjUgMy4yODEgNi41IDMuNzA3di02Ljk4OHptLTYuNSA0LjY0NGwtNi41LTMuNzQydi0yLjEzMWw2LjUgMy4xOTV2Mi42Nzh6TTAgMTAuOTM1bDYuNSAzLjI0M3Y1Ljg5M2wtNi41LTMuOTc1di01LjE2MXptMS41IDUuNDYxbDYuNSAzLjMyMnY3Ljk2N2wtNi41LTMuNzQydi03LjU0N3ptNy41IDMuMyA2LjUgMy4zODh2Ny41NDdsLTYuNS0zLjkzNnYtNi45OTl6bTYuNSAyLjU2OGw2LjUtMy4zODl2Ni45NjJsLTYuNSAzLjk1OHYtNy41MzF6IiBmaWxsPSIid2hpdGUiLz48L3N2Zz4=&logoColor=white" width="120"><br>
       <b>마법사의 모자</b> 🧙
     </td>
     <td>
@@ -111,7 +111,7 @@ pie title 좋아하는 클라우드 마법 주문 (이번 달)
   </tr>
   <tr>
     <td align="center">
-      <img src="https://media.giphy.com/media/3ohze3pdoPu1xXSmmQ/giphy.gif" width="100" height="100"><br>
+      <img src="https://img.shields.io/badge/-유리%20구두%20파이프라인-%234B0082?style=for-the-badge&logo=github-actions&logoColor=white" width="160"><br>
       <b>유리 구두 파이프라인</b> 👠
     </td>
     <td>
@@ -136,11 +136,11 @@ pie title 좋아하는 클라우드 마법 주문 (이번 달)
 
 <div align="center">
 
-| ![AWS](https://media.giphy.com/media/QVJuZ2XSMcBMUn0ncX/giphy.gif) | ![Kubernetes](https://media.giphy.com/media/rHR7jZfihrN3DWFKNJ/giphy.gif) | ![Terraform](https://media.giphy.com/media/n1lL3HcSHUQFO/giphy.gif) |
+| <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" width="100" /> | <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" width="100" /> | <img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white" width="100" /> |
 |:---:|:---:|:---:|
 | **AWS** | **Kubernetes** | **Terraform** |
 
-| ![Docker](https://media.giphy.com/media/LndvV5ZnAHAJKDAR8p/giphy.gif) | ![Python](https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif) | ![HoloLens](https://media.giphy.com/media/l0MYS8i4dDk8XJNWo/giphy.gif) |
+| <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" width="100" /> | <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" width="100" /> | <img src="https://img.shields.io/badge/Microsoft-XR/MR-%234285F4.svg?style=for-the-badge&logo=microsoft&logoColor=white" width="100" /> |
 |:---:|:---:|:---:|
 | **Docker** | **Python** | **XR/MR** |
 
@@ -165,7 +165,8 @@ pie title 좋아하는 클라우드 마법 주문 (이번 달)
 </div>
 
 <p align="center">
-  <img src="https://github.com/shashax42/shashax42/blob/output/github-contribution-grid-snake-dark.svg" alt="공주님의 GitHub 잔디밭을 가로지르는 뱀" />
+  <!-- 잔디밭 뱀은 GitHub Actions 설정 후 활성화됩니다 -->
+  <img src="https://img.shields.io/badge/-GitHub%20잔디밭%20뱀-%23FF69B4?style=for-the-badge&logo=github&logoColor=white" alt="공주님의 GitHub 잔디밭을 가로지르는 뱀" />
 </p>
 
 <div align="center">
