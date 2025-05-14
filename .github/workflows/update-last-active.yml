@@ -29,28 +29,42 @@ jobs:
           CURRENT_TIME=$(date '+%Y-%m-%d %H:%M:%S KST')
           echo "현재 시간: $CURRENT_TIME"
           
+          # 백업 생성
+          cp README.md README.md.bak
+          
           # README.md 파일 내용 확인
           echo "README.md 파일 내용 확인:"
           grep -n "LAST_ACTIVE" README.md || echo "마커를 찾을 수 없습니다"
           
-          # 파일 내용 전체 교체 대신 특정 패턴만 교체
+          # 방법 1: 마커 교체 시도 (안전한 방법으로 변경)
           if grep -q "<!--LAST_ACTIVE-->" README.md; then
-            echo "마커 찾음, 업데이트 중..."
-            sed -i "s|<!--LAST_ACTIVE-->|$CURRENT_TIME|g" README.md
-            cat README.md | grep -A 1 -B 1 "$CURRENT_TIME"
+            echo "마커를 찾았습니다. 안전한 방법으로 교체합니다."
+            perl -i -pe "s/<!--LAST_ACTIVE-->/$CURRENT_TIME/g" README.md
+            echo "교체 후 내용:"
+            grep -A 1 -B 1 "$CURRENT_TIME" README.md || echo "교체된 내용을 찾을 수 없습니다."
+          # 방법 2: 'Last Spell Cast:' 패턴 찾아서 교체
+          elif grep -q "Last Spell Cast:" README.md; then
+            echo "'Last Spell Cast:' 패턴을 찾았습니다. 이 패턴을 사용하여 교체합니다."
+            perl -i -pe "s/(Last Spell Cast:).*/$1 $CURRENT_TIME/g" README.md
+            echo "교체 후 내용:"
+            grep "Last Spell Cast:" README.md
+          # 방법 3: 일반적인 'Last active:' 패턴 찾아서 교체
           else
-            echo "마커를 찾을 수 없습니다. 다른 형식으로 시도합니다."
-            # 다른 패턴도 시도
-            sed -i "s|Last active:.*|Last active: $CURRENT_TIME|g" README.md
+            echo "일반적인 'Last active:' 패턴을 사용합니다."
+            perl -i -pe "s/(Last active:).*/$1 $CURRENT_TIME/g" README.md
+            echo "교체 후 내용:"
+            grep "Last active:" README.md || echo "'Last active:' 패턴을 찾을 수 없습니다."
           fi
           
-          # 변경 확인 및 표시
-          git diff README.md
-          if [[ -z $(git status --porcelain) ]]; then
+          # 변경사항 확인
+          if cmp -s README.md README.md.bak; then
             echo "변경사항이 없습니다."
+            rm README.md.bak
             exit 0
           else
             echo "변경사항이 감지되었습니다."
+            git diff README.md
+            rm README.md.bak
           fi
       
       - name: Commit and push changes
