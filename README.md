@@ -20,7 +20,7 @@
 
 | 👑 Languages | ☁️ Cloud | 🔧 Tools |
 |--------------|----------|----------|
-| JAVA, Python, ShellScript, etc.| AWS, Azure | ArgoCD, Terraform, K8S, etc.|
+| JAVA, Python, ShellScript, etc.| AWS, Azure | ArgoCD, Terraform, K8S, Datadog etc.|
 
 </div>
 
