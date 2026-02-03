@@ -1,7 +1,8 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=FFD1DC&height=150&section=header&text=Magical%20Cloud%20Architect&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 <div align="center">
-  <img src="./hamster.gif" width="800" alt="Princess Hamster" />
+  <img src="./hamster.gif" width="400" alt="Princess Hamster" />
+  <img src="./Azure.gif" width="400" alt="Azure" />
 </div>
 </p>
 
